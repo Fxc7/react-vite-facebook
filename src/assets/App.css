@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rowdies', cursive;
+}
+
+nav {
+  background-color: #000000 !important;
+  max-width: -webkit-fill-available;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+nav .container span {
+  color: #3a6186;
+}
+
+body {
+  background: #3a6186;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #89253e, #3a6186);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0 20px;
+
+}
+
+.color-default {
+  color: #3a6186;
+}
+
+.font-cherry {
+  font-family: 'Cherry Bomb One', cursive;
+}
+
+.font-xx-large {
+  font-size: xx-large;
+}
+
+.font-x-large {
+  font-size: x-large;
+}
+
+.font-large {
+  font-size: large;
+}
+
+.font-small {
+  font-size: small;
+}
+
+.font-x-small {
+  font-size: x-small;
+}
+
+.font-xx-small {
+  font-size: xx-small;
+}
+
+.container .content-result .col {
+  box-shadow: 0 1px 2px rgb(0, 0, 1), 0 1px 13px rgb(0, 0, 1);
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container .content-result .col img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.container .content-download .col-sm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 1px 2px rgb(0, 0, 1), 0 1px 13px rgb(0, 0, 1);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container .content-download .col-sm input {
+  max-width: -webkit-fill-available;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 10px;
+  width: 90vh;
+  cursor: text;
+}
+
+.container .content-download .col-sm input::placeholder {
+  font-size: 14px;
+  color: #383232;
+}
+
+.container .content-download .col-sm button {
+  padding: 10px 26px;
+  font-size: small;
+  background-color: #89253e;
+}
+
+.container .content-download .col-sm button:hover {
+  box-shadow: 0 3px 2px rgb(0, 0, 1);
+}
+
+.container .content-features {
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 1px 2px rgb(0, 0, 1), 0 1px 13px rgb(0, 0, 1);
+}
+
+.container .content-features hr {
+  border: 2px double #000000;
+}
+
+footer {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #000000;
+  color: #3a6186;
+  padding-top: 15px;
+  position: fixed;
+  text-align: center;
+  line-height: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  margin-top: 250px;
+  margin-left: 180px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+.loading-text {
+  margin-left: 175px;
+  margin-top: 5px;
+  color: #fff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container .content-result .col img {
+    height: auto;
+  }
+
+  .container .content-result .col {
+    font-size: 12px;
+  }
+
+  .container .content-result .col button {
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .container .content-download svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container .content-download input {
+    width: 100px;
+    height: 30px;
+  }
+
+  .container .content-features h1 {
+    font-size: 22px;
+  }
+
+  .container .content-features p {
+    font-size: 10px;
+  }
+
+  .container .content-features .col .card .card-body {
+    font-size: 10px;
+  }
+
+  .container .content-download p {
+    font-size: 10px;
+  }
+
+  nav .container .collapse span {
+    font-size: 20px;
+  }
+
+  footer .container p {
+    font-size: 10px;
+  }
+}
